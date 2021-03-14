@@ -1,10 +1,10 @@
-# id_generator_couchdb
+# id_generator_couchdb v2.0.0
 
 CouchDB configuration for the project id_generator.
 
 ## Prerequisites
 
-* CouchDB 2.3.1
+* CouchDB 3.1.1
 
 ## Deployment
 
@@ -16,11 +16,12 @@ CouchDB configuration for the project id_generator.
 
 ## Dependencies
 
-- id_generator v1.0.0
+- lmos_db      v1.0.0
+- id_generator v2.0.0
 
 ## License
 
-MIT
+GNU Affero General Public License v3.0
 
 ## Authors
 
