@@ -1,6 +1,6 @@
-# id_generator_couchdb v2.0.0
+# id_generator_couchdb v3.0.1
 
-CouchDB configuration for the project id_generator.
+The CouchDB configuration for the ID Generator application.
 
 ## Prerequisites
 
@@ -8,16 +8,24 @@ CouchDB configuration for the project id_generator.
 
 ## Deployment
 
-1. Create databases: `<your_prefix_>myorg`
-2. Create CouchDB user for the application `id_generator` and grant it with the proper permissions.
-3. Create the new design documents called `id_generator` on the database.
-4. Add map function `orgID_to_couchdbID` on the database.
-5. Add update function `get_numeric_id` on the database.
+1. Create a CouchDB user for the ID Generator application
+2. Create `<your_prefix_>myorg` and `<your_prefix_>private_app` databases (non-partition)
+3. Grant proper permissions to the CouchDB user
+
+For the database `<your_prefix_>myorg`,
+
+1. Create a new design document named `id_generator`
+2. Add the map function `orgID_to_couchdbID`
+3. Add the update function `get_numeric_id`
+
+For the database `<your_prefix_>private_app`,
+
+1. Create a new design document named `id_generator`
+2. Add the map function `get_orgID`
 
 ## Dependencies
 
-- lmos_db      v1.0.0
-- id_generator v2.0.0
+- LMOS CouchDB v2.0.0
 
 ## License
 
