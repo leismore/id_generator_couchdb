@@ -1,4 +1,4 @@
-# id_generator_couchdb v3.1.0
+# id_generator_couchdb v3.1.1
 
 The CouchDB configuration for the ID Generator application.
 
